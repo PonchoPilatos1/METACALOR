@@ -1,2 +1,2 @@
-#Proyecto de Thelma
-#METACALOR
+# Proyecto de Thelma
+//METACALOR
