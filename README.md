@@ -1,1 +1,2 @@
-Avance del proyecto: NULO
+#Proyecto de Thelma
+#METACALOR
