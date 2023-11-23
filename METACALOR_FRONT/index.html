@@ -27,72 +27,55 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary py-3 d-none d-md-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white pr-3" href="">FAQs</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white px-3" href="">Help</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white pl-3" href="">Support</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-white pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
-                <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+            <!-- Side Menu Toggle Button -->
+            <button type="button" class="navbar-toggler" id="menuToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Side Menu -->
+            <div class="side-menu" id="sideMenu">
+                <a href="index.html" class="navbar-brand d-block mb-4">
+                    
                 </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="food.html" class="nav-item nav-link">Food</a>
+                    <a href="ranking.html" class="nav-item nav-link">Ranking</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+            <!-- Main Navigation -->
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="#" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Meta</span>Calor</h1>
+                </a>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="product.html" class="nav-item nav-link">Product</a>
+                    <!-- Hidden on larger screens -->
+                    <div class="navbar-nav ml-auto py-0 d-lg-none">
+                        <!-- This button will open the side menu -->
+                        <button type="button" class="navbar-toggler" id="menuToggle">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
-                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+                    <!-- Brand on larger screens -->
+                    <a href="#" class="navbar-brand mx-5 d-none d-lg-block">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Meta</span>Calor</h1>
                     </a>
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <!-- Empty on larger screens -->
                     </div>
                 </div>
             </nav>
         </div>
     </div>
+    <!-- Modified Navigation End -->
+
     <!-- Navbar End -->
 
 
@@ -101,11 +84,11 @@
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="img/Carrusel.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Traditional & Delicious</h4>
-                            <h1 class="display-3 text-white mb-md-4">Traditional Ice Cream Since 1950</h1>
+                            <h4 class="text-white text-uppercase mb-md-3">healthy and happy</h4>
+                            <h1 class="display-3 text-white mb-md-4">the best application for health</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a>
                         </div>
                     </div>
@@ -114,8 +97,8 @@
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Traditional & Delicious</h4>
-                            <h1 class="display-3 text-white mb-md-4">Made From Our Own Organic Milk</h1>
+                            <h4 class="text-white text-uppercase mb-md-3">healthy and happy</h4>
+                            <h1 class="display-3 text-white mb-md-4">Have fun while you improve</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a>
                         </div>
                     </div>
@@ -141,32 +124,31 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
-                    <h1 class="section-title position-relative text-center mb-5">Traditional & Delicious Ice Cream Since 1950</h1>
+                    <h1 class="section-title position-relative text-center mb-5">The application to be healthy and happy </h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 py-5">
                     <h4 class="font-weight-bold mb-3">About Us</h4>
-                    <h5 class="text-muted mb-3">Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea</h5>
-                    <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod</p>
+                    <h5 class="text-muted mb-3">Aplicacion creada con el fin de mejorar la salud de todos </h5>
+                    <p>En esta aplicacion fue creada y trabajada por nuestros 5 miembros de desarrolladores y expertos en el tema de la salud encontrando las mejores herramientas</p>
                     <a href="" class="btn btn-secondary mt-2">Learn More</a>
                 </div>
                 <div class="col-lg-4" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-250" src="img/MetaCalorjpg.jpeg" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4 py-5">
                     <h4 class="font-weight-bold mb-3">Our Features</h4>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
-                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Eos kasd eos dolor</h5>
-                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Eos kasd eos dolor</h5>
-                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Eos kasd eos dolor</h5>
+                    <p>En nuestra app encontraras cosas como comidas recomendadas registro de calorias ademas semanalmente actualizacion de ranking global que si entras en ellos podras obtener recompensas por el gran esfurzo que haces  </p>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Expertos en el tema</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Herramientas y ayuda para tu dieta y ejercicio</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Atencion para cualquier consulta de la pagina o de ti mismo</h5>
                     <a href="" class="btn btn-primary mt-2">Learn More</a>
                 </div>
             </div>
         </div>
-    </div>
     <!-- About End -->
 
 
@@ -175,7 +157,7 @@
         <div class="row bg-primary m-0">
             <div class="col-md-6 px-0" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/promotion.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/comida1.jpg" style="object-fit: cover;">
                     <button type="button" class="btn-play" data-toggle="modal"
                         data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
                         <span></span>
@@ -186,12 +168,11 @@
                 <div class="h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
                     <div class="d-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
                         style="width: 100px; height: 100px;">
-                        <h3 class="font-weight-bold text-secondary mb-0">$199</h3>
+                        <h3 class="font-weight-bold text-secondary mb-0">$99</h3>
                     </div>
-                    <h3 class="font-weight-bold text-white mt-3 mb-4">Chocolate Ice Cream</h3>
-                    <p class="text-white mb-4">Lorem justo clita dolor ipsum ut sed eos, ipsum et dolor kasd sit ea
-                        justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
-                    <a href="" class="btn btn-secondary py-3 px-5 mt-2">Order Now</a>
+                    <h3 class="font-weight-bold text-white mt-3 mb-4">Suscripcion mensual </h3>
+                    <p class="text-white mb-4">El mejor servicio a solo 99 cada 1 mese para ti aprovecha la oportunidad de cambiar y mejorar su vida </p>
+                    <a href="register.html" class="btn btn-secondary py-3 px-5 mt-2">Order Now</a>
                 </div>
             </div>
         </div>
@@ -223,7 +204,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative mb-5">Best Services We Provide For Our Clients</h1>
+                    <h1 class="section-title position-relative mb-5">Los mejores servicios para nuestros clientes</h1>
                 </div>
                 <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
             </div>
@@ -232,42 +213,42 @@
                     <div class="owl-carousel service-carousel">
                         <div class="service-item">
                             <div class="service-img mx-auto">
-                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-1.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/servicioCliente.jpg" style="object-fit: cover;">
                             </div>
                             <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Quality Maintain</h5>
-                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
-                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">contacto perzonalizado</h5>
+                                <p>Contactanos para recibir las mejores atenciones de salud </p>
+                                <a href="contact.html" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
                             </div>
                         </div>
                         <div class="service-item">
                             <div class="service-img mx-auto">
-                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-2.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/servicioComida.jpg" style="object-fit: cover;">
                             </div>
                             <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Individual Approach</h5>
-                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
-                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Las mejores recetas </h5>
+                                <p>Ve nuestra seccion de recetas saludables que se esta actulizando cada dia para su mejora</p>
+                                <a href="food.html" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
                             </div>
                         </div>
                         <div class="service-item">
                             <div class="service-img mx-auto">
-                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-3.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/ServicioRanking.jpg" style="object-fit: cover;">
                             </div>
                             <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Celebration Ice Cream</h5>
-                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
-                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Ranking Semanal</h5>
+                                <p>Revisa nuestro ranking semanal para que veas como todos mejoran ademas por nuestras redes sociales revisa las sorpresas que tenemos para ti si eres de los mejores</p>
+                                <a href="ranking.html" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
                             </div>
                         </div>
                         <div class="service-item">
                             <div class="service-img mx-auto">
-                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-4.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/ServicioRegistro.jpg" style="object-fit: cover;">
                             </div>
                             <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Delivery To Any Point</h5>
-                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
-                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Registro de Calorias</h5>
+                                <p>La mejor manera de registar tus calorias </p>
+                                <a href="gallery.html" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -282,30 +263,30 @@
     <div class="container-fluid my-5 py-5 px-0">
         <div class="row justify-content-center m-0">
             <div class="col-lg-5">
-                <h1 class="section-title position-relative text-center mb-5">Delicious Ice Cream Made From Our Very Own Organic Milk</h1>
+                <h1 class="section-title position-relative text-center mb-5">Deliciosas comidas gran atencion y entranamientos personalizadosk</h1>
             </div>
         </div>
         <div class="row m-0 portfolio-container">
             <div class="col-lg-4 col-md-6 p-0 portfolio-item">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                    <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                    <img class="img-fluid w-100" src="img/berenjena.jpg" alt="">
+                    <a class="portfolio-btn" href="img/berenjena.jpg" data-lightbox="portfolio">
                         <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
                     </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 p-0 portfolio-item">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                    <a class="portfolio-btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                    <img class="img-fluid w-100" src="img/ejercicio.jpg" alt="">
+                    <a class="portfolio-btn" href="img/ejercicio.jpg" data-lightbox="portfolio">
                         <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
                     </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 p-0 portfolio-item">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                    <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                    <img class="img-fluid w-100" src="img/servicioCliente.jpg" alt="">
+                    <a class="portfolio-btn" href="img/servicioCliente.jpg" data-lightbox="portfolio">
                         <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
                     </a>
                 </div>
@@ -320,16 +301,16 @@
             </div>
             <div class="col-lg-4 col-md-6 p-0 portfolio-item">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                    <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                    <img class="img-fluid w-100" src="img/comida2.jpg" alt="">
+                    <a class="portfolio-btn" href="img/comida2.jpg" data-lightbox="portfolio">
                         <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
                     </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 p-0 portfolio-item">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                    <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                    <img class="img-fluid w-100" src="img/comida1.jpg" alt="">
+                    <a class="portfolio-btn" href="img/comida1.jpg" data-lightbox="portfolio">
                         <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
                     </a>
                 </div>
@@ -344,7 +325,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative mb-5">Best Prices We Offer For Ice Cream Lovers</h1>
+                    <h1 class="section-title position-relative mb-5">Las mejores recetas saludables</h1>
                 </div>
                 <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
             </div>
@@ -353,53 +334,51 @@
                     <div class="owl-carousel product-carousel">
                         <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
                             <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                                <h4 class="font-weight-bold text-white mb-0">$</h4>
                             </div>
                             <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                                <img class="rounded-circle w-100 h-100" src="img/product-1.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100" src="img/berenjena.jpg" style="object-fit: cover;">
                             </div>
-                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+                            <h5 class="font-weight-bold mb-4">Berenjenas Rellenas</h5>
+                            <a href="food.html" class="btn btn-sm btn-secondary">learn More</a>
+                            
                         </div>
                         <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
                             <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                                <h4 class="font-weight-bold text-white mb-0">$</h4>
                             </div>
                             <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                                <img class="rounded-circle w-100 h-100" src="img/product-2.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100" src="img/tataki.jpg" style="object-fit: cover;">
                             </div>
-                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
-                        </div>
+                            <h5 class="font-weight-bold mb-4">Tataki de atun</h5>
+                            <a href="food.html" class="btn btn-sm btn-secondary">learn More</a>                        </div>
                         <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
                             <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                                <h4 class="font-weight-bold text-white mb-0">$</h4>
                             </div>
                             <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                                <img class="rounded-circle w-100 h-100" src="img/product-3.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100" src="img/salmontoast.jpg" style="object-fit: cover;">
                             </div>
-                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
-                        </div>
+                            <h5 class="font-weight-bold mb-4">Tostada de salmon</h5>
+                            <a href="food.html" class="btn btn-sm btn-secondary">learn More</a>                        </div>
                         <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
                             <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                                <h4 class="font-weight-bold text-white mb-0">$</h4>
                             </div>
                             <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                                <img class="rounded-circle w-100 h-100" src="img/product-4.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-80" src="img/sandwich.jpg" style="object-fit: cover;">
                             </div>
-                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
-                        </div>
+                            <h5 class="font-weight-bold mb-4">Sandwich de verduras</h5>
+                            <a href="food.html" class="btn btn-sm btn-secondary">learn More</a>                        </div>
                         <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
                             <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                                <h4 class="font-weight-bold text-white mb-0">$</h4>
                             </div>
                             <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                                <img class="rounded-circle w-100 h-100" src="img/product-5.jpg" style="object-fit: cover;">
+                                <img class="rounded-circle w-100 h-100" src="img/ramen.jpg" style="object-fit: cover;">
                             </div>
-                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+                            <h5 class="font-weight-bold mb-4">Ramen Vegano</h5>
+                            <a href="food.html" class="btn btn-sm btn-secondary">learn More</a>
                         </div>
                     </div>
                 </div>
@@ -414,7 +393,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative mb-5">Experienced & Most Famous Ice Cream Chefs</h1>
+                    <h1 class="section-title position-relative mb-5">Desarrolladores</h1>
                 </div>
                 <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
             </div>
@@ -477,6 +456,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="team-item">
+                            <div class="team-img mx-auto">
+                                <img class="rounded-circle w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded px-4 py-5" style="margin-top: -100px;">
+                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
+                                <h6 class="text-uppercase text-muted mb-4">Designation</h6>
+                                <div class="d-flex justify-content-center pt-1">
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -490,7 +483,7 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative text-center mb-5">Clients Say About Our Famous Ice Cream</h1>
+                    <h1 class="section-title position-relative text-center mb-5">Lo que nuestros clientes dicen sobre la aplicacion</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -498,21 +491,21 @@
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <h4 class="font-weight-light mb-4">Sin duda me ayudo a mejorar mi estilo de vida me resulta mas motivacion y mas facil ver todo lo que necesito para la mejora de mi salud</h4>
                             <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
                             <h5 class="font-weight-bold m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <h4 class="font-weight-light mb-4">Que grandiosa aplicacion los desarrolladores aparte de darle un uso ala aplicacion tan facil para todo mejoro la manera de poder visualizar o encontrar cosas especificicas </h4>
                             <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
                             <h5 class="font-weight-bold m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <h4 class="font-weight-light mb-4">La repuesta a su contacto los expertos que tienen trabajando atras de ellos ademas de muchas otras cosas los hace la mejor aplicacion que eh conocido de este ramo </h4>
                             <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
                             <h5 class="font-weight-bold m-0">Client Name</h5>
                             <span>Profession</span>
@@ -531,7 +524,7 @@
             <div class="row">
                 <div class="col-12 mb-4">
                     <a href="index.html" class="navbar-brand m-0">
-                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">Meta</span>Calor</h1>
                     </a>
                 </div>
                 <div class="col-12 mb-4">
@@ -583,6 +576,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>
