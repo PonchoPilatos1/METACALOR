@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>LOG-IN</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar " style="margin-top: 50px;">
+        <div class="container-lg  " style="z-index: 9;" >
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0" >
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div></div>
+                    <img  class="navbar-brand mx-5" src="img/logo.jpg" 
+                    style="object-fit: cover; width: 30%; height: 30%;"/>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid page-header-register" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3 mt-lg-5 py-3">REGISTER</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="login.html">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0"><a class="text-white" href="login.html">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-1">
+        <div class="container py-1">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative text-center mb-5">NEW USER!</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="contact-form bg-light rounded p-5">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="../BackEnd/Clases/Controladores/controlador_registrarUsuario.php" method="post">
+                                
+                            <div class="control-group">
+                                    <input type="text" onkeydown="return soloLetras(event);" class="form-control p-4" id="nombre" name="nombre" maxlength="50" placeholder="Nombre" required="required" title="No se permiten números en este campo" data-validation-required-message="Digite su nombre completo:" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="usuario" name="usuario" placeholder="Nombre de usuario" required="required" data-validation-required-message="Please enter your user name" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="number" class="form-control p-4" id="edad" name="edad" placeholder="Edad" required="required" min="10" max="100" data-validation-required-message="Digite su edad" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="number" class="form-control p-4" id="altura" name="altura" placeholder="altura (cm)" min="100" max="250" required="required" data-validation-required-message="Please enter your height" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="number" class="form-control p-4" id="peso" name="peso" placeholder="weight" required="required" min="1" max="200" data-validation-required-message="Ingrese su peso en Kilogramos" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="control-group">
+                                <p style="text-align: center;">Please enter your gender !</p>
+                                <select  class="form-control p-1" id="categoria" name="sexo" placeholder="gender" required="required" data-validation-required-message="Selecciona tu sexo" style="height: 3rem;">
+                                    <option disabled selected>Selecciona tu sexo</option>
+                                    <option value="M"> Mujer</option>
+                                    <option value="H"> Hombre</option>
+                                </select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="control-group">
+                                <p style="text-align: center;">Describe que tan activo eres</p>
+                                <select  class="form-control p-1" id="subcategoria" name="af" placeholder="actividad" required="required" data-validation-required-message="Selecciona una actividad" style="height: 3rem;">
+                                    <option disabled selected>Seleccione el tipo de actividad fisica que practica</option>
+                                    <option value="1"> Sedentaria (No realiza actividad fisica) </option>
+                                    <option value="2"> Liviana (Tres horas semanales de actividad fisica)</option>
+                                    <option value="3"> Moderada (seis horas semanales de actividad fisica)</option>
+                                    <option value="4"> Intensa (cuatro a cinco horas diarias de actividad fisica)</option>
+                                </select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                          
+                            <div class="control-group">
+                                <input type="password" class="form-control p-4" id="password" name="password" maxlength="10" placeholder="password" required="required" data-validation-required-message="Please enter your password" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                           
+                            <div class="control-group">
+                                <p style="text-align: center;">Introduce your desired weight !</p>
+                                <input type="number" class="form-control p-4" id="meta" name="meta" placeholder="Desired weight" required="required" data-validation-required-message="Please enter your desired weight" />
+                                <p class="help-block text-danger"></p>
+                            </div><br><br>
+                            <div>
+                                <button class="btn btn-primary btn-block py-2 px-2" type="submit" id="sign-in" style="font-size: 20px;font-style: bold;">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-light py-1" style="margin-top: 30px;">
+        <div class="container text-center py-2">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="login.html" class="navbar-brand m-0">
+                        <img  src="img/logo.jpg" style=" width: 30%; height: 30%;"/>   
+                    </a>
+                </div>
+                <div class="col-12 mb-4">
+                    <a class="btn btn-outline-secondary btn-social mr-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-secondary btn-social" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-12 mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
+                            <h5 class="font-weight-bold mb-2">Get In Touch</h5>
+                            <p class="mb-2">123 Street, New York, USA</p>
+                            <p class="mb-0">+52 3345 678901</p>
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-left">
+                            <h5 class="font-weight-bold mb-2">Opening Hours</h5>
+                            <p class="mb-2">Mon – Sat, 8AM – 5PM</p>
+                            <p class="mb-0">Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="m-0">&copy; <a href="" style="color: #84DCC6;">Domain</a>. All Rights Reserved. Designed by <a href="" style="color: #84DCC6;">Gerudo team</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/soloLetras.js"></script>
+
+
+</body>
+
+</html>
